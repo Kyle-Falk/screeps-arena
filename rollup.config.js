@@ -31,7 +31,7 @@ function getOptions(arenaSrc) {
         // https://rollupjs.org/guide/en/#outputpaths
         // TS requires that we use non-relative paths for these "ambient" modules
         // The game requires relative paths, so prefix all game modules with "/" in the output bundle
-        if (path.startsWith("game") || path.startsWith("arena")) {
+        if (path.startsWith("game") || path.startsWith("arena") || path.startsWith("tutorial")) {
           return "/" + path;
         }
       }
